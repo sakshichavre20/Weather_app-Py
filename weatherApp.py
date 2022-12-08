@@ -22,5 +22,5 @@ df = pd.DataFrame(index=pd.to_datetime(weather_data['index'],
                   columns=weather_data['columns'])
 
 #print(weather_data)
-temp = df.iloc[0,4]
-print(f"Tempertature for {city} on {date} = {temp}C")
+temp = int(df.iloc[0,4])
+print(f"Temperature for {city} on {date} = {temp}C")
